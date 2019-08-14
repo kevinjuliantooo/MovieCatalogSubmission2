@@ -176,6 +176,10 @@
         "source": "C:\\Users\\62813\\AndroidStudioProjects\\MovieCatalogSubmission2\\MovieCatalogSubmission2\\app\\src\\main\\res\\drawable\\poster_creed.jpg"
     },
     {
+        "merged": "C:\\Users\\62813\\AndroidStudioProjects\\MovieCatalogSubmission2\\MovieCatalogSubmission2\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_film.xml.flat",
+        "source": "C:\\Users\\62813\\AndroidStudioProjects\\MovieCatalogSubmission2\\MovieCatalogSubmission2\\app\\src\\main\\res\\layout\\fragment_film.xml"
+    },
+    {
         "merged": "C:\\Users\\62813\\AndroidStudioProjects\\MovieCatalogSubmission2\\MovieCatalogSubmission2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_poster_glass.jpg.flat",
         "source": "C:\\Users\\62813\\AndroidStudioProjects\\MovieCatalogSubmission2\\MovieCatalogSubmission2\\app\\src\\main\\res\\drawable\\poster_glass.jpg"
     },
@@ -408,20 +412,12 @@
         "source": "C:\\Users\\62813\\.gradle\\caches\\transforms-2\\files-2.1\\3782ce24e9cd17a44cf05eaee5d50a9f\\appcompat-1.0.2\\res\\layout-watch-v20\\abc_alert_dialog_button_bar_material.xml"
     },
     {
-        "merged": "C:\\Users\\62813\\AndroidStudioProjects\\MovieCatalogSubmission2\\MovieCatalogSubmission2\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_tvshow.xml.flat",
-        "source": "C:\\Users\\62813\\AndroidStudioProjects\\MovieCatalogSubmission2\\MovieCatalogSubmission2\\app\\src\\main\\res\\layout\\fragment_tvshow.xml"
-    },
-    {
         "merged": "C:\\Users\\62813\\AndroidStudioProjects\\MovieCatalogSubmission2\\MovieCatalogSubmission2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_poster_master_z.jpg.flat",
         "source": "C:\\Users\\62813\\AndroidStudioProjects\\MovieCatalogSubmission2\\MovieCatalogSubmission2\\app\\src\\main\\res\\drawable\\poster_master_z.jpg"
     },
     {
         "merged": "C:\\Users\\62813\\AndroidStudioProjects\\MovieCatalogSubmission2\\MovieCatalogSubmission2\\app\\build\\intermediates\\res\\merged\\debug\\layout_select_dialog_singlechoice_material.xml.flat",
         "source": "C:\\Users\\62813\\.gradle\\caches\\transforms-2\\files-2.1\\3782ce24e9cd17a44cf05eaee5d50a9f\\appcompat-1.0.2\\res\\layout\\select_dialog_singlechoice_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\62813\\AndroidStudioProjects\\MovieCatalogSubmission2\\MovieCatalogSubmission2\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_movie.xml.flat",
-        "source": "C:\\Users\\62813\\AndroidStudioProjects\\MovieCatalogSubmission2\\MovieCatalogSubmission2\\app\\src\\main\\res\\layout\\fragment_movie.xml"
     },
     {
         "merged": "C:\\Users\\62813\\AndroidStudioProjects\\MovieCatalogSubmission2\\MovieCatalogSubmission2\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_part_time.xml.flat",

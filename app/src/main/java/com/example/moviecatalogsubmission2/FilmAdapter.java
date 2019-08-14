@@ -26,14 +26,23 @@ public class FilmAdapter extends RecyclerView.Adapter<FilmAdapter.ListViewHolder
     public void setData(ArrayList<FilmItems> items) {
         mData.clear();
         mData.addAll(items);
-        System.out.println(mData);
         notifyDataSetChanged();
+
 
     }
 
-//    public FilmAdapter(ArrayList<Film> films) {
-//        this.films = films;
-//    }
+    public FilmAdapter(){
+
+    }
+
+    public void addItem(final FilmItems item) {
+        mData.add(item);
+        notifyDataSetChanged();
+    }
+
+    public void clearData() {
+        mData.clear();
+    }
 
 
     @NonNull

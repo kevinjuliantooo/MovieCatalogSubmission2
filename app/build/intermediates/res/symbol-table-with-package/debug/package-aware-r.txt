@@ -1169,6 +1169,7 @@ id media_actions
 id message
 id middle
 id mini
+id movieTab
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
@@ -1268,6 +1269,7 @@ id transition_transform
 id tvDate
 id tvDescription
 id tvPoster
+id tvTab
 id tvTitle
 id uniform
 id unlabeled
@@ -1341,8 +1343,7 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
-layout fragment_movie
-layout fragment_tvshow
+layout fragment_film
 layout item_list
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include

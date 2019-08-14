@@ -6,7 +6,7 @@ import android.os.Parcelable;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class FilmItems implements Parcelable {
+public class FilmItems implements Parcelable{
 
     //Untuk Movie
     private int id;

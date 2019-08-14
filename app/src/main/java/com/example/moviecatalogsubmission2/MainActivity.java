@@ -10,18 +10,13 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.FrameLayout;
 import android.widget.ProgressBar;
-import android.widget.TableLayout;
 
 import com.google.android.material.tabs.TabLayout;
-
-import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
     private String current;
-//    private ProgressBar progressBar;
 
     private TabLayout.OnTabSelectedListener mOnTabSelectedListener = new TabLayout.OnTabSelectedListener() {
 
@@ -31,15 +26,12 @@ public class MainActivity extends AppCompatActivity {
         public void onTabSelected(TabLayout.Tab tab) {
             switch (tab.getPosition()){
                 case 0:
-//                    showLoading(true);
-                    fragment = new MovieFragment();
-//                    showLoading(false);
+                    fragment = new FilmFragment("movie");
                     break;
                 case 1:
-//                    showLoading(true);
-                    fragment = new TvshowFragment();
-//                    showLoading(false);
+                    fragment = new FilmFragment("tv");
                     break;
+
             }
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.frameLayout, fragment, fragment.getClass().getSimpleName())
@@ -58,26 +50,26 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        progressBar = findViewById(R.id.progressBar);
-
         TabLayout tabLayout = findViewById(R.id.tab);
-        tabLayout.addOnTabSelectedListener(mOnTabSelectedListener);
-
 
         if (savedInstanceState == null) {
-            Fragment defaultFragment = new MovieFragment();
+            Fragment defaultFragment = new FilmFragment("movie");
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.frameLayout, defaultFragment, defaultFragment.getClass().getSimpleName())
                     .commit();
         }
 
+        tabLayout.addOnTabSelectedListener(mOnTabSelectedListener);
 
     }
+
+
 
 
     @Override
@@ -100,5 +92,7 @@ public class MainActivity extends AppCompatActivity {
                 return true;
         }
     }
+
+
 
 }
