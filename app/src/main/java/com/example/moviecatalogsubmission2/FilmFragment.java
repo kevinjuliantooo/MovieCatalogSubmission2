@@ -91,7 +91,6 @@ public class FilmFragment extends Fragment {
     }
 
     private void setFilmItems() {
-//        showLoading(true);
         mainViewModel.setFilm(current_language, GET_THIS);
     }
 

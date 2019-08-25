@@ -106,9 +106,6 @@ public class FilmItems implements Parcelable{
                     break;
             }
 
-//            this.name = name;
-//            this.first_air_date = first_air_date;
-
         } catch (Exception e) {
             e.printStackTrace();
         }
