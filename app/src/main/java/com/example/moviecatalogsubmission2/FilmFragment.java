@@ -28,12 +28,7 @@ import java.util.ArrayList;
  */
 public class FilmFragment extends Fragment {
 
-    private String[] dataTitle;
-    private String[] dataDescription;
-    private TypedArray dataPoster;
-    private String[] dataDate;
     private FilmAdapter filmAdapter;
-    private ArrayList<Film> films;
     public static final String EXTRA_DETAIL = "extra_detail";
     public static String GET_THIS = null;
     private RecyclerView recyclerView;

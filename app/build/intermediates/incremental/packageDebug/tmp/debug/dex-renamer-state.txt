@@ -1,4 +1,4 @@
-#Sun Aug 25 14:18:40 ICT 2019
+#Sun Aug 25 14:27:55 ICT 2019
 base.0=C\:\\Users\\62813\\AndroidStudioProjects\\MovieCatalogSubmission2\\MovieCatalogSubmission2\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex

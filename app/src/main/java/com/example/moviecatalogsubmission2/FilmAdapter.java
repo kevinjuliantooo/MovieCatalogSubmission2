@@ -20,7 +20,6 @@ import java.util.ArrayList;
 public class FilmAdapter extends RecyclerView.Adapter<FilmAdapter.ListViewHolder> {
 
     public static final String EXTRA_DETAIL = "extra_detail";
-    private ArrayList<Film> films;
     private ArrayList<FilmItems> mData = new ArrayList<>();
 
     public void setData(ArrayList<FilmItems> items) {
@@ -58,11 +57,6 @@ public class FilmAdapter extends RecyclerView.Adapter<FilmAdapter.ListViewHolder
         holder.bind(mData.get(position));
 
         final FilmItems film = mData.get(position);
-//
-//        holder.title.setText(film.getTitle());
-//        holder.description.setText(film.getDescription());
-//        holder.poster.setImageResource(film.getPosterImg());
-//
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
