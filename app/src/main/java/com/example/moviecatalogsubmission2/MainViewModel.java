@@ -24,10 +24,14 @@ public class MainViewModel extends ViewModel {
         final ArrayList<FilmItems> listItems = new ArrayList<>();
         String url = "https://api.themoviedb.org/3/" + get_film + "/popular?api_key=" + API_KEY + "&language=" + language + "&page=1";
 
+        //Sebelum mengambil data, Anda bisa initiate loading = true disini
+//        loading.setValue(true);
+
         client.get(url, new AsyncHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
                 try {
+//                    lalu loading = flase disini karena data sudah dimuat
                     String result = new String(responseBody);
                     JSONObject responseObject = new JSONObject(result);
                     JSONArray list = responseObject.getJSONArray("results");

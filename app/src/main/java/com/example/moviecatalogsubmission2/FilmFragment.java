@@ -2,6 +2,7 @@ package com.example.moviecatalogsubmission2;
 
 
 import android.content.res.TypedArray;
+import android.os.AsyncTask;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -69,17 +70,22 @@ public class FilmFragment extends Fragment {
 
         progressBar = (ProgressBar) view.findViewById(R.id.progressBar);
 
-        mainViewModel = ViewModelProviders.of(getActivity()).get(MainViewModel.class);
+        if (getActivity() != null) {
+            mainViewModel = ViewModelProviders.of(getActivity()).get(MainViewModel.class);
+
+        }
 
         setFilmItems();
         mainViewModel.getFilms().observe(this, getFilm);
+
+
 
         filmAdapter =  new FilmAdapter();
         filmAdapter.notifyDataSetChanged();
 
         recyclerView = view.findViewById(R.id.recycleView);
-        recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        recyclerView.setHasFixedSize(true);
         recyclerView.setAdapter(filmAdapter);
 
     }
@@ -92,7 +98,6 @@ public class FilmFragment extends Fragment {
     private Observer<ArrayList<FilmItems>> getFilm = new Observer<ArrayList<FilmItems>>() {
         @Override
         public void onChanged(ArrayList<FilmItems> filmItems) {
-            setFilmItems();
             if (filmItems != null) {
                 filmAdapter.setData(filmItems);
             }
@@ -107,5 +112,7 @@ public class FilmFragment extends Fragment {
             progressBar.setVisibility(View.GONE);
         }
     }
+
+
 
 }
